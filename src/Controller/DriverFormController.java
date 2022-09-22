@@ -22,6 +22,6 @@ public class DriverFormController {
 
         Drivers.drivers.add(new Drivers(DName,DNIC,DLicense,DAddress,DContact));
 
-        
+
     }
 }
