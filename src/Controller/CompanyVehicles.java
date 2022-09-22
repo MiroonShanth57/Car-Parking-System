@@ -199,20 +199,20 @@ public class CompanyVehicles {
 //    Add Vehicle To ArrayList
 
     static {
-        AllVehicleArrayList.add(new Bus("NA-3434", "Bus", 3500, 60, "7835348345V"));
-        AllVehicleArrayList.add(new Van("KA-4563", "Van", 1000, 7, "8826253734V"));
-        AllVehicleArrayList.add(new Van("58-3567", "Van", 1500, 4, "9283289272V"));
-        AllVehicleArrayList.add(new Van("GF-4358", "Van", 800, 4, "9425245373V"));
-        AllVehicleArrayList.add(new Van("CCB-3568", "Van", 1800, 8, "8976544373V"));
-        AllVehicleArrayList.add(new Van("LM-6679", "Van", 1500, 4, "7835348345V"));
-        AllVehicleArrayList.add(new Van("QA-3369", "Van", 1800, 6, "9173537839V"));
-        AllVehicleArrayList.add(new CargoLorry("KB-3668", "CargoLorry", 2500, 2, "9573536833V"));
-        AllVehicleArrayList.add(new CargoLorry("JJ-9878", "CargoLorry", 3000, 2, "9362426738V"));
-        AllVehicleArrayList.add(new CargoLorry("GH-5772", "CargoLorry", 4000, 3, "9162353436V"));
-        AllVehicleArrayList.add(new CargoLorry("XY-4456", "CargoLorry", 3500, 2, "9255556343V"));
-        AllVehicleArrayList.add(new CargoLorry("YQ-3536", "CargoLorry", 2000, 2, "8735354355V"));
-        AllVehicleArrayList.add(new CargoLorry("CBB-3566", "CargoLorry", 2500, 2, "9026344373V"));
-        AllVehicleArrayList.add(new CargoLorry("QH-3444", "CargoLorry", 5000, 4, "9692653338V"));
+        AllVehicleArrayList.add(new Bus("NA-3434", "Bus", 3500, 60, "14"));
+        AllVehicleArrayList.add(new Van("KA-4563", "Van", 1000, 7, "01"));
+        AllVehicleArrayList.add(new Van("58-3567", "Van", 1500, 4, "02"));
+        AllVehicleArrayList.add(new Van("GF-4358", "Van", 800, 4, "03"));
+        AllVehicleArrayList.add(new Van("CCB-3568", "Van", 1800, 8, "04"));
+        AllVehicleArrayList.add(new Van("LM-6679", "Van", 1500, 4, "12"));
+        AllVehicleArrayList.add(new Van("QA-3369", "Van", 1800, 6, "13"));
+        AllVehicleArrayList.add(new CargoLorry("KB-3668", "CargoLorry", 2500, 2, "05"));
+        AllVehicleArrayList.add(new CargoLorry("JJ-9878", "CargoLorry", 3000, 2, "06"));
+        AllVehicleArrayList.add(new CargoLorry("GH-5772", "CargoLorry", 4000, 3, "07"));
+        AllVehicleArrayList.add(new CargoLorry("XY-4456", "CargoLorry", 3500, 2, "08"));
+        AllVehicleArrayList.add(new CargoLorry("YQ-3536", "CargoLorry", 2000, 2, "09"));
+        AllVehicleArrayList.add(new CargoLorry("CBB-3566", "CargoLorry", 2500, 2, "10"));
+        AllVehicleArrayList.add(new CargoLorry("QH-3444", "CargoLorry", 5000, 4, "11"));
     }
 
 
