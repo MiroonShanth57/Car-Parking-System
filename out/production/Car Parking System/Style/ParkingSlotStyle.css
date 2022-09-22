@@ -1,0 +1,110 @@
+.mainAnchorPane{
+    -fx-background-color: #bcd8e8;
+}
+
+.mainAnchorPane:hover{
+    -fx-background-color: #aad3e5;
+}
+
+.slotAnchorPane{
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+    -fx-background-color: #e4eff5;
+}
+
+.slotAnchorPane:hover{
+
+    -fx-cursor: hand;
+    -fx-background-color: #d1e1ee;
+}
+
+.textAreaForSlot{
+
+    -fx-prompt-text-fill: blue;
+    -fx-font-size: 60px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+
+
+.parkBtn{
+    -fx-background-color: #1b1bdb;
+    -fx-text-fill: white;
+     -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+
+}
+
+.parkBtn:hover{
+    -fx-font-size: 14px;
+    -fx-background-color: #fdfdfd;
+    -fx-text-fill: #1b1bdb;
+
+}
+
+.btnManagement{
+    -fx-background-color: #29c7e3;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.btnManagement:hover{
+    -fx-font-size: 14px;
+    -fx-background-color: #fdfdfd;
+    -fx-text-fill: #29e356;
+
+}
+
+.title{
+    -fx-font-family: serif;
+    -fx-font-size: 25px;
+
+}
+
+.btnDone{
+    -fx-cursor: hand;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-background-color: #4ed54e;
+    -fx-font-size: 13px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.btnDone:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #3bc63b;
+    -fx-font-size: 14px;
+    -fx-text-fill: #151414;
+
+}
+
+.selectcomb{
+    -fx-font-family: "JetBrains Mono";
+    -fx-prompt-text-fill: #0c0c2b;
+    -fx-content-display: center;
+    -fx-font-size: 15px;
+}
+
+.lblType{
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 15px;
+    -fx-prompt-text-fill: #0c0c2b;
+    -fx-text-fill: black;
+}
+
+.anchorpanelbl{
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+
+    -fx-background-color: #b6e4ec;
+}

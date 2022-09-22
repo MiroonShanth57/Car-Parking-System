@@ -1,0 +1,59 @@
+.mainAnchorPane{
+    -fx-background-color: #bcd8e8;
+}
+
+.AnchorPane{
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+    -fx-background-color: #e4eff5;
+}
+
+.lblTitle{
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.txtFileds{
+    -fx-font-family: sans-serif;
+    -fx-font-size: 15px;
+    -fx-cursor: text;
+    -fx-prompt-text-fill: #051538;
+}
+
+.btnLogin{
+    -fx-cursor: hand;
+    -fx-font-family: "Lucida Sans";
+    -fx-background-color: #79dc70;
+    -fx-font-size: 12px;
+    -fx-text-fill: #092a76;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+}
+
+.btnLogin:hover{
+
+    -fx-background-color: #2eb820;
+    -fx-font-size: 13px;
+    -fx-text-fill: #d3d6dc;
+}
+
+.btnCancel{
+    -fx-cursor: hand;
+    -fx-font-family: "Lucida Sans";
+    /*-fx-background-color: #79dc70;*/
+    -fx-border-color: #a30707;
+    -fx-font-size: 12px;
+    -fx-text-fill: #a30707;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.btnCancel:hover{
+
+    -fx-background-color: #a30707;
+    -fx-font-size: 13px;
+    -fx-text-fill: #d3d6dc;
+}

@@ -1,0 +1,76 @@
+.mainAnchorPane{
+    -fx-background-color: #bcd8e8;
+}
+
+.AnchorPane{
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+
+    -fx-background-color: #e4eff5;
+}
+
+.txtV{
+    -fx-alignment: center;
+    -fx-font-family: "JetBrains Mono Thin";
+    -fx-font-size: 12px;
+
+}
+
+.btnAdd{
+    -fx-background-color: #1ca512;
+    -fx-font-family: Arial;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-radius: 7px;
+
+}
+
+.btnAdd:hover{
+    -fx-font-size: 16px;
+}
+
+.btnUp{
+    -fx-background-color: #2073cb;
+    -fx-font-family: Arial;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-radius: 7px;
+}
+
+.btnUp:hover{
+    -fx-font-size: 16px;
+}
+
+.btnRE{
+    -fx-background-color: #cb2020;
+    -fx-font-family: Arial;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-radius: 7px;
+}
+
+.btnRE:hover{
+    -fx-font-size: 16px;
+}
+
+.lblTitle2{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #124795;
+}
+
+
+
+.lblTitle1{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #124795;
+}
