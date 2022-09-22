@@ -33,20 +33,20 @@
             </Label>
          </children>
       </AnchorPane>
-      <JFXButton id="parkBtn" buttonType="RAISED" layoutX="346.0" layoutY="364.0" onAction="#ParkVehicleRun" prefHeight="30.0" prefWidth="167.0" styleClass="parkBtn" stylesheets="@../Style/ParkingSlotStyle.css" text="Park Vehicle" />
-      <JFXButton buttonType="RAISED" layoutX="346.0" layoutY="416.0" onAction="#OnDiliveryShiftRun" prefHeight="30.0" prefWidth="167.0" styleClass="parkBtn" stylesheets="@../Style/ParkingSlotStyle.css" text="On Dilivery Shift" />
+      <JFXButton id="parkBtn" fx:id="btnVehiclePark" buttonType="RAISED" layoutX="346.0" layoutY="364.0" onAction="#ParkVehicleRun" prefHeight="30.0" prefWidth="167.0" styleClass="parkBtn" stylesheets="@../Style/ParkingSlotStyle.css" text="Park Vehicle" />
+      <JFXButton fx:id="btnDeliveryShift" buttonType="RAISED" layoutX="346.0" layoutY="416.0" onAction="#OnDiliveryShiftRun" prefHeight="30.0" prefWidth="167.0" styleClass="parkBtn" stylesheets="@../Style/ParkingSlotStyle.css" text="On Dilivery Shift" />
       <JFXButton id="btnManagement" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="325.0" layoutY="478.0" onAction="#OpenManagementDash" prefHeight="30.0" prefWidth="210.0" styleClass="btnManagement" stylesheets="@../Style/ParkingSlotStyle.css" text="Management Log in" />
       <AnchorPane layoutX="31.0" layoutY="86.0" prefHeight="422.0" prefWidth="274.0" styleClass="slotAnchorPane" stylesheets="@../Style/ParkingSlotStyle.css">
          <children>
-            <JFXComboBox id="selectcomb" fx:id="comVehicle" labelFloat="true" layoutX="32.0" layoutY="58.0" prefHeight="25.0" prefWidth="187.0" promptText="Select Vehicle" styleClass="selectcomb" stylesheets="@../Style/ParkingSlotStyle.css" unFocusColor="#039af2" />
-            <JFXComboBox id="selectcomb" fx:id="combDriver" focusColor="#0b05e3" labelFloat="true" layoutX="32.0" layoutY="199.0" prefHeight="25.0" prefWidth="187.0" promptText="Driver" styleClass="selectcomb" stylesheets="@../Style/ParkingSlotStyle.css" unFocusColor="#02a8e4" />
-            <AnchorPane layoutX="26.0" layoutY="136.0" prefHeight="31.0" prefWidth="210.0" styleClass="anchorpanelbl" stylesheets="@../Style/ParkingSlotStyle.css">
+            <JFXComboBox id="selectcomb" fx:id="comVehicle" focusColor="#0131c0" labelFloat="true" layoutX="32.0" layoutY="58.0" prefHeight="25.0" prefWidth="187.0" promptText="Select Vehicle" styleClass="selectcomb" stylesheets="@../Style/ParkingSlotStyle.css" unFocusColor="#039af2" />
+            <JFXComboBox id="selectcomb" fx:id="combDriver" focusColor="#0b05e3" labelFloat="true" layoutX="33.0" layoutY="275.0" prefHeight="25.0" prefWidth="187.0" promptText="Driver" styleClass="selectcomb" stylesheets="@../Style/ParkingSlotStyle.css" unFocusColor="#02a8e4" />
+            <AnchorPane layoutX="23.0" layoutY="207.0" prefHeight="31.0" prefWidth="210.0" styleClass="anchorpanelbl" stylesheets="@../Style/ParkingSlotStyle.css">
                <children>
-                  <Label id="lblType" fx:id="lblTypeVehicle" layoutX="103.0" layoutY="1.0" prefHeight="29.0" prefWidth="113.0" styleClass="lblType" stylesheets="@../Style/ParkingSlotStyle.css" text="van" />
+                  <Label id="lblType" fx:id="lblTypeVehicle" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="1.0" prefHeight="29.0" prefWidth="113.0" styleClass="lblType" stylesheets="@../Style/ParkingSlotStyle.css" text="   -------" />
                   <Label id="lblType" layoutX="6.0" layoutY="5.0" styleClass="lblType" stylesheets="@../Style/ParkingSlotStyle.css" text="Vehicle Type : " />
                </children>
             </AnchorPane>
-            <JFXButton id="btnDone" buttonType="RAISED" layoutX="26.0" layoutY="306.0" onAction="#parkingSlotFinderRun" prefHeight="25.0" prefWidth="210.0" styleClass="btnDone" stylesheets="@../Style/ParkingSlotStyle.css" text="Continue &gt;&gt;&gt;" />
+            <JFXButton id="btnDone" buttonType="RAISED" layoutX="21.0" layoutY="125.0" onAction="#parkingSlotFinderRun" prefHeight="25.0" prefWidth="210.0" styleClass="btnDone" stylesheets="@../Style/ParkingSlotStyle.css" text="Continue &gt;&gt;&gt;" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="35.0" layoutY="18.0" prefHeight="53.0" prefWidth="487.0" styleClass="slotAnchorPane" stylesheets="@../Style/ParkingSlotStyle.css">

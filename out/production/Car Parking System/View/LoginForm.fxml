@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="mainAnchorPane" prefHeight="313.0" prefWidth="539.0" styleClass="mainAnchorPane" stylesheets="@../Style/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+<AnchorPane id="mainAnchorPane" fx:id="LoginContext" prefHeight="313.0" prefWidth="539.0" styleClass="mainAnchorPane" stylesheets="@../Style/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="39.0" layoutY="28.0" prefHeight="44.0" prefWidth="462.0" styleClass="AnchorPane" stylesheets="@../Style/login.css">
          <children>
@@ -19,20 +18,25 @@
       </AnchorPane>
       <AnchorPane layoutX="40.0" layoutY="84.0" prefHeight="200.0" prefWidth="462.0" styleClass="AnchorPane" stylesheets="@../Style/login.css">
          <children>
-            <ImageView fitHeight="133.0" fitWidth="137.0" layoutX="31.0" layoutY="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="133.0" fitWidth="137.0" focusTraversable="true" layoutX="31.0" layoutY="25.0" mouseTransparent="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Asstes/pic/Admin.png" />
+                  <Image url="@../Asstes/pic/Admin.jpg" />
                </image>
             </ImageView>
-            <JFXTextField id="txtFileds" labelFloat="true" layoutX="231.0" layoutY="40.0" promptText="User Name" styleClass="txtFileds" stylesheets="@../Style/login.css" unFocusColor="BLACK" />
-            <JFXButton id="btnCancel" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="202.0" layoutY="146.0" prefHeight="34.0" prefWidth="97.0" styleClass="btnCancel" stylesheets="@../Style/login.css" text="Cancel" />
-            <JFXButton id="btnLogin" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="309.0" layoutY="147.0" prefHeight="34.0" prefWidth="121.0" styleClass="btnLogin" stylesheets="@../Style/login.css" text="Login" />
-            <JFXPasswordField labelFloat="true" layoutX="229.0" layoutY="100.0" promptText="Password" styleClass="txtFileds" stylesheets="@../Style/login.css" />
+            <JFXTextField id="txtFileds" fx:id="txtUserName" labelFloat="true" layoutX="231.0" layoutY="37.0" promptText="User Name" styleClass="txtFileds" stylesheets="@../Style/login.css" unFocusColor="BLACK" />
+            <JFXButton id="btnCancel" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="202.0" layoutY="143.0" onAction="#BackToHome" prefHeight="34.0" prefWidth="97.0" styleClass="btnCancel" stylesheets="@../Style/login.css" text="Cancel" />
+            <JFXButton id="btnLogin" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="309.0" layoutY="144.0" onAction="#openDashBoard" prefHeight="34.0" prefWidth="121.0" styleClass="btnLogin" stylesheets="@../Style/login.css" text="Login" />
+            <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="229.0" layoutY="94.0" promptText="Password" styleClass="txtFileds" stylesheets="@../Style/login.css" />
          </children>
       </AnchorPane>
       <Label layoutX="38.0" layoutY="289.0" text="version 1.0.0">
          <font>
             <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblError" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="288.0" prefHeight="17.0" prefWidth="462.0" textFill="RED">
+         <font>
+            <Font name="Microsoft JhengHei UI" size="12.0" />
          </font>
       </Label>
    </children>

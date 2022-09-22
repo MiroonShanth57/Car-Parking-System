@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="mainAnchorPane" prefHeight="647.0" prefWidth="846.0" styleClass="mainAnchorPane" stylesheets="@../Style/DashBoard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashBoardFormController">
+<AnchorPane id="mainAnchorPane" fx:id="DashBoardContext" prefHeight="647.0" prefWidth="846.0" styleClass="mainAnchorPane" stylesheets="@../Style/DashBoard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashBoardFormController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="37.0" layoutY="23.0" prefHeight="37.0" prefWidth="259.0" styleClass="AnchorPane" stylesheets="@../Style/DashBoard.css">
          <children>
@@ -24,7 +24,7 @@
       <AnchorPane id="AnchorPane" layoutX="37.0" layoutY="151.0" prefHeight="230.0" prefWidth="773.0" styleClass="AnchorPane" stylesheets="@../Style/DashBoard.css">
          <children>
             <Label id="titleIP" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="6.0" styleClass="titleIP" stylesheets="@../Style/DashBoard.css" text="In Parking" />
-            <TableView blendMode="MULTIPLY" cache="true" cacheHint="SCALE" layoutX="56.0" layoutY="37.0" prefHeight="168.0" prefWidth="661.0">
+            <TableView fx:id="tblParking" blendMode="MULTIPLY" cache="true" cacheHint="SCALE" layoutX="56.0" layoutY="37.0" prefHeight="168.0" prefWidth="661.0">
               <columns>
                 <TableColumn fx:id="colVNumber" prefWidth="162.0" text="Vehicle Number" />
                 <TableColumn fx:id="colVType" prefWidth="157.0" text="Vehicle Type" />
@@ -37,7 +37,7 @@
       <AnchorPane id="AnchorPane" layoutX="37.0" layoutY="391.0" prefHeight="230.0" prefWidth="773.0" styleClass="AnchorPane" stylesheets="@../Style/DashBoard.css">
          <children>
             <Label id="titleIP" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="8.0" styleClass="titleIP" stylesheets="@../Style/DashBoard.css" text="On Delivery" />
-            <TableView blendMode="MULTIPLY" layoutX="53.0" layoutY="39.0" prefHeight="168.0" prefWidth="661.0">
+            <TableView fx:id="tblDelivery" blendMode="MULTIPLY" layoutX="53.0" layoutY="39.0" prefHeight="168.0" prefWidth="661.0">
                <columns>
                   <TableColumn fx:id="colVNumberT2" prefWidth="162.0" text="Vehicle Number" />
                   <TableColumn fx:id="colVTypeT2" prefWidth="157.0" text="Vehicle Type" />
