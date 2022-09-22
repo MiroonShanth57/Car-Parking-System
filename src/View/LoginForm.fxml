@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane id="mainAnchorPane" prefHeight="313.0" prefWidth="539.0" styleClass="mainAnchorPane" stylesheets="@../Style/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="39.0" layoutY="28.0" prefHeight="44.0" prefWidth="462.0" styleClass="AnchorPane" stylesheets="@../Style/login.css">
@@ -24,10 +23,10 @@
                   <Image url="@../Asstes/pic/Admin.png" />
                </image>
             </ImageView>
-            <JFXTextField id="txtFileds" labelFloat="true" layoutX="231.0" layoutY="40.0" promptText="User Name" styleClass="txtFileds" stylesheets="@../Style/login.css" unFocusColor="BLACK" />
-            <JFXButton id="btnCancel" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="202.0" layoutY="146.0" prefHeight="34.0" prefWidth="97.0" styleClass="btnCancel" stylesheets="@../Style/login.css" text="Cancel" />
-            <JFXButton id="btnLogin" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="309.0" layoutY="147.0" prefHeight="34.0" prefWidth="121.0" styleClass="btnLogin" stylesheets="@../Style/login.css" text="Login" />
-            <JFXPasswordField labelFloat="true" layoutX="229.0" layoutY="100.0" promptText="Password" styleClass="txtFileds" stylesheets="@../Style/login.css" />
+            <JFXTextField id="txtFileds" fx:id="txtUserName" labelFloat="true" layoutX="231.0" layoutY="40.0" promptText="User Name" styleClass="txtFileds" stylesheets="@../Style/login.css" unFocusColor="BLACK" />
+            <JFXButton id="btnCancel" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="202.0" layoutY="146.0" onAction="#BackToHome" prefHeight="34.0" prefWidth="97.0" styleClass="btnCancel" stylesheets="@../Style/login.css" text="Cancel" />
+            <JFXButton id="btnLogin" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="309.0" layoutY="147.0" onAction="#openDashBoard" prefHeight="34.0" prefWidth="121.0" styleClass="btnLogin" stylesheets="@../Style/login.css" text="Login" />
+            <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="229.0" layoutY="100.0" promptText="Password" styleClass="txtFileds" stylesheets="@../Style/login.css" />
          </children>
       </AnchorPane>
       <Label layoutX="38.0" layoutY="289.0" text="version 1.0.0">

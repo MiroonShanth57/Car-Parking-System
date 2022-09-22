@@ -1,9 +1,6 @@
 package Controller;
 
 import com.jfoenix.controls.JFXComboBox;
-import javafx.animation.Animation;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -11,12 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import javafx.util.Duration;
+
 
 import java.io.IOException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.time.LocalTime;
+
 import java.util.Date;
 
 public class ParkingSlotFormController {
@@ -28,10 +25,10 @@ public class ParkingSlotFormController {
     public Label lblTypeVehicle;
 
 
-
-    {
-//        loadDateAndTime();
+    public void initialize() {
+        loadDateAndTime();
     }
+
 
     public void ParkVehicleRun(ActionEvent actionEvent) {
     }
@@ -52,22 +49,25 @@ public class ParkingSlotFormController {
     }
 
     public void loadDateAndTime(){
-        Date date=new Date();
-        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
-        lblDate.setText(f.format(date));
+        SimpleDateFormat formatter1 = new SimpleDateFormat("dd/MM/yyyy");
+        Date dateShow = new Date();
 
-
-        Timeline time = new Timeline(new KeyFrame(Duration.ZERO, e -> {
-            LocalTime currentTime = LocalTime.now();
-            lblTime.setText(
-                    currentTime.getHour() + " : " + currentTime.getMinute() +
-                            " : " + currentTime.getSecond()
-            );
-        }),
-                new KeyFrame(Duration.seconds(1))
-        );
-        time.setCycleCount(Animation.INDEFINITE);
-        time.play();
+        lblDate.setText(formatter1.format(dateShow));
+        Thread timerThread = new Thread(() -> {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
+            while (true) {
+                try {
+                    Thread.sleep(1000); //1 second
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                final String time = simpleDateFormat.format(new Date());
+                Platform.runLater(() -> {
+                    lblTime.setText(time);
+                });
+            }
+        });
+        timerThread.start();
     }
 
     public void parkingSlotFinderRun(ActionEvent actionEvent) {

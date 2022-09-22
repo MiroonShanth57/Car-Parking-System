@@ -7,7 +7,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="455.0" prefWidth="607.0" styleClass="mainAnchorPane" stylesheets="@../Style/Vehicle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DriverFormController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="21.0" layoutY="26.0" prefHeight="44.0" prefWidth="559.0" styleClass="AnchorPane" stylesheets="@../Style/Vehicle.css">
@@ -22,15 +21,15 @@
                   <Image url="@../Asstes/pic/Driver.png" />
                </image>
             </ImageView>
-            <JFXTextField id="txtV" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="53.0" prefHeight="25.0" prefWidth="182.0" promptText="Driver Name" styleClass="txtV" stylesheets="@../Style/Vehicle.css" />
-            <JFXTextField id="txtV" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="192.0" prefHeight="25.0" prefWidth="182.0" promptText="Address" styleClass="txtV" stylesheets="@../Style/Vehicle.css" unFocusColor="#03133c" />
-            <JFXTextField id="txtV" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="143.0" prefHeight="25.0" prefWidth="182.0" promptText="Driving License No" styleClass="txtV" stylesheets="@../Style/Vehicle.css" />
-            <JFXButton id="btnAdd" buttonType="RAISED" layoutX="132.0" layoutY="290.0" prefHeight="37.0" prefWidth="116.0" styleClass="btnAdd" stylesheets="@../Style/Vehicle.css" text="ADD +" />
+            <JFXTextField id="txtV" fx:id="txtDName" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="53.0" prefHeight="25.0" prefWidth="182.0" promptText="Driver Name" styleClass="txtV" stylesheets="@../Style/Vehicle.css" />
+            <JFXTextField id="txtV" fx:id="txtAddress" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="192.0" prefHeight="25.0" prefWidth="182.0" promptText="Address" styleClass="txtV" stylesheets="@../Style/Vehicle.css" unFocusColor="#03133c" />
+            <JFXTextField id="txtV" fx:id="txtDLicense" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="143.0" prefHeight="25.0" prefWidth="182.0" promptText="Driving License No" styleClass="txtV" stylesheets="@../Style/Vehicle.css" />
+            <JFXButton id="btnAdd" buttonType="RAISED" layoutX="132.0" layoutY="290.0" onAction="#SaveDriverRun" prefHeight="37.0" prefWidth="116.0" styleClass="btnAdd" stylesheets="@../Style/Vehicle.css" text="ADD +" />
             <JFXButton id="btnUp" buttonType="RAISED" layoutX="268.0" layoutY="291.0" prefHeight="37.0" prefWidth="116.0" styleClass="btnUp" stylesheets="@../Style/Vehicle.css" text="UPDATE ++" />
             <JFXButton id="btnRE" buttonType="RAISED" layoutX="402.0" layoutY="291.0" prefHeight="37.0" prefWidth="116.0" styleClass="btnRE" stylesheets="@../Style/Vehicle.css" text="REMOVE -" />
             <Label id="lblTitle2" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="19.0" styleClass="lblTitle2" stylesheets="@../Style/Vehicle.css" text="Manage Your Driver Here" />
-            <JFXTextField id="txtV" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="97.0" prefHeight="25.0" prefWidth="182.0" promptText="NIC" styleClass="txtV" stylesheets="@../Style/Vehicle.css" />
-            <JFXTextField id="txtV" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="239.0" prefHeight="25.0" prefWidth="182.0" promptText="Contact No" styleClass="txtV" stylesheets="@../Style/Vehicle.css" unFocusColor="#03133c" />
+            <JFXTextField id="txtV" fx:id="txtDNC" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="97.0" prefHeight="25.0" prefWidth="182.0" promptText="NIC" styleClass="txtV" stylesheets="@../Style/Vehicle.css" />
+            <JFXTextField id="txtV" fx:id="txtContactNo" alignment="CENTER" labelFloat="true" layoutX="295.0" layoutY="239.0" prefHeight="25.0" prefWidth="182.0" promptText="Contact No" styleClass="txtV" stylesheets="@../Style/Vehicle.css" unFocusColor="#03133c" />
          </children>
       </AnchorPane>
    </children>
